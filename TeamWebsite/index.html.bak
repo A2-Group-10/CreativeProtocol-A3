@@ -1,0 +1,40 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<title>A2 Group 10</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<section class="background">
+			<nav>
+				<div class="nav-links">
+					<ul>
+						<li><a href="">Team Profile</a></li>
+						<li><a href="">Industry data</a></li>
+						<li><a href="">IT Work</a></li>
+						<li><a href="">IT Technologies</a></li>
+						<li><a href="">Project Idea</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+		<div class="text-box">
+			<h1>Creative Protocol</h1>
+			<p>Follow us on our path to become IT proffesionals!</p>
+		
+		</div>
+		
+		</section>
+		
+		
+		
+		
+	
+		
+	</body>
+	</html>
+	
