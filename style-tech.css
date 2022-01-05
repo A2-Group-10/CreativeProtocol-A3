@@ -16,16 +16,7 @@ html {
 	
 }
 
-@media (max-width: 700px) {
-	html {
-		background-image: url(images/iphone-tech-bkg.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		
-	}
-}
-	
+
 	
 	
 	
@@ -88,6 +79,15 @@ nav{
 
 }
 
-
+@media (max-width: 700px) {
+	html {
+		background-image: url(images/iphone-tech-bkg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		
+	}
+}
+	
 
 
