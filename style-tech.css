@@ -83,6 +83,7 @@ nav{
 	html {
 		min-height: 100%;
 		background-image: url(images/iphone-tech-bkg.jpg);
+		background-size: contain;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	
