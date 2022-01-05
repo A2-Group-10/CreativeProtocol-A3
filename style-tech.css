@@ -85,6 +85,7 @@ nav{
 		background-image: url(images/iphone-tech-bkg.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-position: centre;
 		background-attachment: fixed;
 		
 	}
