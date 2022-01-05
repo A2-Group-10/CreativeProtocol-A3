@@ -16,6 +16,20 @@ html {
 	
 }
 
+@media (max-width: 700px) {
+	html {
+		background-image: url(images/"");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		
+	}
+
+	
+	
+	
+	
+	
 nav{
 	display: flex; 
 	padding: 3% 6%;
