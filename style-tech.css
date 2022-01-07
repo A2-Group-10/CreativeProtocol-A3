@@ -79,6 +79,11 @@ nav{
 
 }
 
+.texttrans-box h3 {
+	color: #ffffff;
+
+}
+
 @media (max-width: 750px) {
 	html {
 		
@@ -108,7 +113,10 @@ nav{
 	}
 		
 
+.texttrans-box h3 {
+	color: #ffffff;
 
+}
 
 
 }
