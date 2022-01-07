@@ -7,7 +7,7 @@
 
 html {
 	min-height: 100%;
-	background-image: url(images/tech.jpg);
+	background: #F4A261;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left-side;
@@ -67,7 +67,7 @@ nav{
 	position: absolute;
 	
 	text-align: left;
-	background-color: #000000;
+	background-color: #E9C46A;
 	opacity: 0.9;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -79,10 +79,20 @@ nav{
 
 }
 
+.texttrans-box h1 {
+	color: #000000;
+}
+	
+
 .texttrans-box h3 {
-	color: #ffffff;
+	color: #802b00;
 
 }
+	
+.texttrans-box p {
+	color: #E76f51;
+	
+	}
 
 @media (max-width: 750px) {
 	html {
@@ -94,14 +104,16 @@ nav{
 		
 		
 	}
-	.texttrans-box {
-		border: 30px;
+	
+.texttrans-box {
+	border: 30px;
 	margin-left:5%;
 	margin-right:5%;
 	position: absolute;
 	
 	text-align: left;
-	background-color: #000000;
+	background-color: #E9C46A;
+	 
 	opacity: 0.9;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -112,11 +124,21 @@ nav{
 	color: #ffcc66;
 	}
 		
+.texttrans-box h1 {
+	color: #000000;
+}
+	
 
 .texttrans-box h3 {
-	color: #ffffff;
+	color: #802b00;
 
 }
+	
+.texttrans-box p {
+	color: #E76f51;
+	
+	}
+
 
 
 }
