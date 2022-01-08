@@ -39,8 +39,8 @@ nav{
 }
 .nav-links ul li a{
 	text-decoration: none;
-	font-size: 18px;
-	color: #BF810D;
+	font-size: 20px;
+	color: #FFB01F;
 }
 	
 .nav-links ul li::after{
@@ -86,7 +86,7 @@ nav{
 	
 
 .texttrans-box h3 {
-	color: #E76f51;
+	color: #FFB01F;
 	font-weight: bold;
 
 }
