@@ -96,10 +96,13 @@ nav{
 
 @media (max-width: 750px) {
 	html {
-		
+		min-height: 100%;
 		background: #F4A261;
-		background-size: contain;
-		background-repeat: repeat;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left-side;
+		background-attachment: fixed;
+		
 		
 		
 	}
