@@ -7,7 +7,7 @@
 
 html {
 	min-height: 100%;
-	background: #FFFFFF ;
+	background: #bfbfbf ;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left-side;
@@ -47,7 +47,7 @@ nav{
 	content: '';
 	width: 0%;
 	height: 2px;
-	background: #ffffff;
+	background: #802b00;
 	display: block;
 	margin: auto;
 	transition: 0.5s;
@@ -67,7 +67,7 @@ nav{
 	position: absolute;
 	
 	text-align: left;
-	background-color: #E9C46A;
+	background-color: #FFFFFF;
 	opacity: 0.9;
 	padding-left: 10px;
 	padding-right: 10px;
