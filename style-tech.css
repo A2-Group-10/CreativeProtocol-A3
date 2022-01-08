@@ -7,7 +7,7 @@
 
 html {
 	min-height: 100%;
-	background: #994B0B ;
+	background: #000000 ;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left-side;
@@ -40,7 +40,7 @@ nav{
 .nav-links ul li a{
 	text-decoration: none;
 	font-size: 18px;
-	color: #ffffff;
+	color: #BF810D;
 }
 	
 .nav-links ul li::after{
