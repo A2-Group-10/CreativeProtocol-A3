@@ -1,25 +1,26 @@
-
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Fjalla One', sans-serif;
-	color: #000000;
+	
+	
 }
 
 html {
 	min-height: 100%;
-	background-image: url(images/background2.jpeg);
+	background: #bfbfbf ;
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+	background-position: left-side;
 	background-attachment: fixed;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:auto;
+	
 	
 }
 
 
+	
+	
+	
+	
 nav{
 	display: flex; 
 	padding: 3% 6%;
@@ -38,15 +39,15 @@ nav{
 }
 .nav-links ul li a{
 	text-decoration: none;
-	font-size: 18px;
-	color: #ffffff;
+	font-size: 25px;
+	color: #802b00;
 }
 	
 .nav-links ul li::after{
 	content: '';
 	width: 0%;
 	height: 2px;
-	background: #ffffff;
+	background: #802b00;
 	display: block;
 	margin: auto;
 	transition: 0.5s;
@@ -56,52 +57,95 @@ nav{
 }
 
 
-.text-box{
+
+.texttrans-box{
 	
-	
+
 	border: 30px;
 	margin-left:20%;
 	margin-right:20%;
 	position: absolute;
 	
-	text-align: center;
-	background-color: #ffffff;
+	text-align: left;
+	background-color: #FFFFFF;
 	opacity: 0.9;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-style: solid;
 	border-width: 3px;
+	border-color: ##802b00;
+	font-size: 22px;
+	color: #ffcc66;
+
+}
+
+.texttrans-box h1 {
+	color: #000000;
+	font-weight: bold;
+}
+	
+
+.texttrans-box h3 {
+	color: #FFA500;
+	font-weight: bold;
+
+}
+	
+.texttrans-box p {
+	color: #000000;
+	font-weight: lighter;
+	
+	}
+
+@media (max-width: 750px) {
+	html {
+		min-height: 100%;
+		background: #F4A261;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left-side;
+		background-attachment: fixed;
+		
+		
+		
+	}
+	
+.texttrans-box {
+	border: 30px;
+	margin-left:5%;
+	margin-right:5%;
+	position: absolute;
+	
+	text-align: left;
+	background-color: #E9C46A;
+	 
+	opacity: 0.9;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-style: solid;
+	border-width: 1px;
 	border-color: #000000;
+	font-size: 22px;
+	color: #ffcc66;
+	}
+		
+.texttrans-box h1 {
+	color: #000000;
+}
 	
-	
+
+.texttrans-box h3 {
+	color: #802b00;
 
 }
 	
+.texttrans-box p {
+	color: #E76f51;
 	
-	
-
-	
+	}
 
 
 
-
-
-.text-box h1{
-	font-size: 72px;
 }
 
-.text-box h2{
-	font-size: 40px;
-}
 
-.text-box h3{
-	font-size: 26px;
-	
-}
-
-.text-box p{
-	
-	font-size: 18px;
-	
-]
-	
