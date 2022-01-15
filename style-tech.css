@@ -105,7 +105,7 @@ nav{
 @media (max-width: 750px) {
 	html {
 		min-height: 100%;
-		background: #F4A261;
+		background: #bfbfbf;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: left-side;
@@ -121,7 +121,7 @@ nav{
 	margin-right:5%;
 	position: absolute;
 	
-	text-align: left;
+	text-align: center;
 	background-color: #E9C46A;
 	 
 	opacity: 0.9;
@@ -145,13 +145,18 @@ nav{
 }
 	
 .texttrans-box p {
-	color: #E76f51;
+	color: #000000;
 	
 	}
 
-
+.texttrans-box img {
+	display: inline-block;
+	}
+	
 
 }
+	
+
 
 
 	
