@@ -114,6 +114,14 @@ nav{
 	}
 	
 
+ul {
+	list-style-position: inside;
+	padding: 2px 2px;
+	
+	
+}
+
+
 	
 .texttrans-box {
 	border: 30px;
@@ -148,14 +156,6 @@ nav{
 	color: #000000;
 	
 	}
-
-ul {
-	list-style-position: inside;
-	padding: 2px 2px;
-	
-	
-}
-
 
 	
 		
