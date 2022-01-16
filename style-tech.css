@@ -42,7 +42,7 @@ nav{
 	content: '';
 	width: 0%;
 	height: 2px;
-	background: #802b00;
+	background: #000000;
 	display: block;
 	margin: auto;
 	transition: 0.5s;
