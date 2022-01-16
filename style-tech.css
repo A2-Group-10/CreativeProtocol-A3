@@ -112,7 +112,7 @@ nav{
 		background: #bfbfbf;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: left-side;
+		background-position: center;
 		background-attachment: fixed;
 		
 		
@@ -155,8 +155,8 @@ nav{
 
 .texttrans-box img {
 	display: inline-block;
-	width: 400px;
-	height: 350px;
+	width: 75%;
+	height: auto;
 	}
 
 	
