@@ -118,6 +118,12 @@ nav{
 		
 	}
 	
+.img {
+	display: inline-block;
+	width: 75%;
+	height: auto;
+	}
+	
 .texttrans-box {
 	border: 30px;
 	margin-left:5%;
@@ -152,11 +158,6 @@ nav{
 	
 	}
 
-.texttrans-box img {
-	display: inline-block;
-	width: 75%;
-	height: auto;
-	}
 
 	
 }
