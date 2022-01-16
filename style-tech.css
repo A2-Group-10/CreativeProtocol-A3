@@ -8,7 +8,7 @@ html {
 	background-position: left-side;
 	background-attachment: fixed;
 	font-family: 'Fjalla One', sans-serif;
-	
+
 }
 
 
@@ -29,6 +29,7 @@ nav{
 .nav-links ul li{
 	list-style: none;
 	display: inline-block;
+	margin: 0px;
 	padding: 10px 14px;
 	position: relative;
 }
