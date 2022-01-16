@@ -120,16 +120,16 @@ nav{
 	
 .texttrans-box {
 	
-	margin-left:5%;
-	margin-right:5%;
+	margin-left:2%;
+	margin-right:2%;
 	position: absolute;
 	
 	text-align: left;
 	background-color: #ffffff;
 	 
 	opacity: 0.9;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #000000;
