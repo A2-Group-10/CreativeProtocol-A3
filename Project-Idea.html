@@ -256,9 +256,122 @@
               <span class="u-text-custom-color-2">Plans and Progress</span>
             </span>
           </p>
-          <p style="text-align: center;">blahblahblah</p>
           <p style="text-align: center;">
-            <br>
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Overview</span>
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">This project started off as a simple idea to make information on breweries more accessible, with no other immediately recognisable applications that do this, enter “Frothy Chop”. Creative Protocol felt this to be a worthy venture to pursue. As the idea came to fruition at the most basic of levels, we wanted users to be able to create an account and build an app that could utilize a GPS enabled map to easily identify to users the areas in which breweries were close by, most breweries are hard to find and it’s seemingly hard to know whether that brewery is known for a positive customer experience. Once you have found one on the map, you can then click on it to view customer reviews and an overall rating. Many things have changed over the course of this semester, as our knowledge has increased, we have had new ideas, looked at the possibility of new features and thought about how to implement these in further detail as we will try to portray here. Due to the scope of this semester unfortunately we are greatly restricted by time, many of the things we wish to achieve will have to be planned in detail without the chance to take further action.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Development &amp; Backend</span>
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Firstly, like nearly every mobile app, Frothy Chop needs a backend service. With any of the 3 major players (AWS, Microsoft Azure, Google) services you can rapidly build backend services that can scale to meet demand, synchronize data across devices and send notifications. As discussed briefly in assignment two, we believe AWS Amplify is an attractive idea as this is going to help us in creating a backend and other components without needing the extensive expertise to create one from scratch. This will help to centralise all the app components within a manageable console, the Amplify components will make it easier to set up the building blocks of our app without the need for outsourcing as many specific skills that would be costly, also we will only be paying for what services we use, this will prevent us from spending investment money on hardware that isn’t going to be utilized. We plan to use a hosted cloud database to store account information, reviews and feedback of our users, extremely popular amongst the biggest tech companies in the world, an open-source software known as PostgreSQL is a standout, it allows huge customization for developers, has extensive capacity and is highly trusted for its data integrity. Keeping in uniform with the previously mentioned feature, the AWS Amazon Relational Databases will make it easy to set up, operate and scale PostgreSQL deployments in the cloud. Amazon RDS will manage time consuming tasks such as the PostgreSQL software upgrades, storage management and data backups for disaster recovery, whilst still allowing access to all the capabilities of the PostgreSQL database engine that is so familiar with professionals that we may have to outsource to. The core functionality of the app relies on data sourced from the IBA, to provide information on breweries, their products and any events or specials that they may be running. This data will be queried and synchronised with Frothy Chop’s backend database using IBA’s Application Programming Interface (API). Data queries that by their nature require more immediate and live responses than the window of database synchronisation allows will be performed against IBA’s API directly, with queries coming from the app traversing an API gateway or Enterprise Integration Platform (EIP) hosted as part of Frothy Chop’s backend.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">The use of APIs to exchange data between the IBA and Frothy Chop provides a clear demarcation between IBA’s and Frothy Chop’s internal infrastructure. Queries against the API limit the type of transactions allowed between external entities to those that are intended for 3rd party access and provide a layer of security between both entities systems, while the use of an Enterprise Integration Platform enables the app to be able to communicate via the EIP to multiple different entities without needing to know the specifics about that entity’s API.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">The decision to transfer the data from IBA into Frothy Chop’s backend and keep it synchronised and the use of a hosted API gateway or EIP instead of the app querying IBA’s API directly will allow further breweries not associated with the IBA or other industries to be integrated into the app with minimal effort, and to ensure that the app can continue to function should IBA suffer an outage with their infrastructure.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Features</span>
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Figma has emerged as a candidate in terms of creating our User Interface, this will allow us to create a great looking app whilst we all have limited time and limited experience in coding. This is one of the few things we’ve been able to action within the time constraints, the artefacts we have from this stay true to the original vision, a clean simple and easy on the eye app that utilizes the Creative Protocol colour scheme and looks inviting to users. Once we have created something that is close to what we intend to build we will outsource the coding to professional programmers to then create the code.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">One of the main features (also planned to act as a home page) is the interactive map. Of course, the most well-known GPS software is Google maps, they have extensively mapped just about every single road on the globe. We believe that it could be desirable to use the Google Maps platform, for this we will need a Google maps API to be integrated into our app, this way we can easily scale up and down and be charged according to how many people are using our app. That being said, an important point to raise with this idea is how difficult it’s going to be to integrate multiple cloud platforms as we had planned previously to develop this app using AWS services, this is something we haven’t yet fully explored and needs to be extensively researched. Is the Amazon location service going to achieve this goal to the same standard? We haven’t had the time to explore this question yet due to time restrictions, any issues with synchronization would be detrimental to the project and the smooth user experience that we require</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <img src="images/mapss.png" width="373" style="width: 373px;" class="fr-dib fr-fic">
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Feedback is an essential part of our proposed first version release, it’s imperative to know the feelings of our users directly so we can make changes and implement updates accordingly. We shall utilize feedback widgets embedded within our app, the chance for feedback will be displayed once a user has completed a series of actions in the app and/or when they arrive on certain screens. It’s also important that if they chose to ignore prompts, we have opportunity to gain feedback whenever it's convenient to the user, we can achieve this by having open-ended widgets that are easily discoverable and should consider placing them in page headers or footers. We believe these to have a higher success rate than say an email survey system as most users tend to ignore these.</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Push notifications will need to be triggered locally or sent from a third party service when the apps not running, as application publishers this Is a fantastic way to interact with our users. We must ensure that the app build can run and prompt users for notification authorization. They will allow us to maintain user engagement without asking for personal information and must be made up of the following elements; An app icon to clearly display that Frothy Chop is sending the user a notification, A short and snappy title to attract the attention of our users, A Short but concise description of the said notification and a timestamp. These push notifications should be able to both provide personalized messages for specific app users and general-purpose information targeted at a larger user base. App publishers can feasibly build their own infrastructure to address both above, however we believe it costly and unnecessary when we will have already outsourced to developers with AWS expertise and certification. We can utilize ‘Pinpoint’ within AWS services to deploy our notification backend (Intellipat 2021. What is AWS pinpoint?)&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">The above features mentioned are what we at Creative Protocol believe to be a minimum regarding a functioning app that aligns with the original vision. There are other features that have been pitched as ideas but are simply out of the scope of this assignment. Most notably is a proposed “events” section. This was planned to be a section where users can see which breweries have any special one-off brews or food options on the premises. Due to the sheer number of breweries in Sydney we don’t believe this to be a feasible feature to implement in an early version of our app, the sheer level of collaboration needed isn’t realistic considering we haven’t established any sort of relationships with any breweries yet, something to think about for future versions but out of reach as of this moment in time.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <img src="images/loginscreen.png" width="428" style="width: 428px;" class="fr-dib fr-fic">
+              <img src="images/registrationscreen.png" width="426" style="width: 426px;" class="fr-dib fr-fic">
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <img src="images/accountpage.png" width="426" style="width: 426px;" class="fr-dib fr-fic">
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <br>
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Ethics, legality and privacy</span>
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Building a user-based app which involves the extraction of various data sources including public and private information, requires the team to assess all avenues of ethics, legality, and privacy. In modern times there are more and more legal cases raised regarding privacy breaches and unethical practices within the technology industry.</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">The rise of data privacy has even led to legal action being raised by government authorities against big tech such as the case of ACCC VS Google (Australian Competition &amp; Consumer Commission VS Google LLC 2021). Many customers were misled in believing that by clicking “Don’t save my location history” that their data would not be saved to Googles storage. This was misleading as the courts found users would need to further change additional settings to not have their location data saved by Google.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">&nbsp;As awareness spreads so does the annoyance, outrage, and alarm among ordinary, unsophisticated users of digital and information technologies as they learn of practices such as web tracking, behavioural advertising, surveillance of mobile communication, and information capture by mobile apps (Nissenbaum 2015)&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Creative Protocol will take the necessary steps in understanding the ethical and legal responsibilities involved to protect user privacy. We aim to achieve a thorough understanding of the following:&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Australian Privacy Act 1988 (Australian Government 2022) – To understand Australian legislation for the protection, handling, and storage of personal information of our users&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Competition and Consumer Act 2010 (Australian Government 2022) – To enhance our ability to promote ethical practices and fairness towards our users and consumers.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Australian Securities &amp; Exchange Commission (Australian Securities Exchange Commission 2022)– To gain knowledge on how to operate within the governing bodies compliance and regulation legislation.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Copyright</span>
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">We have ideas for expansion outside of “Frothy Chop”, with the possibility to create similar apps for things such as wine and gin distilleries being of huge interest. For this idea to become a reality we need to retain the rights to our code. In Australia, Computer programming code can be registered as ‘literary works’ (Australian Copyright Act 1968) any addition or modification showing sufficient originality is also protected and is automatic from the moment the program represents a tangible form, however, to qualify we must demonstrate that we have used our skills and labour to create the software. It will also cover our user interface in the form of original text images and layout, meaning we will be able to create new apps whilst maintaining that familiar user experience. As owners of the Copyright in software we have exclusive rights to; make copies of the software, publish the software, communicate it to the public, make adaptations and license others to do any of the before mentioned. We will express this in the terms of the license agreement with the user.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Security</span>
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Cyber security is of utmost importance to us and our team. On top of any obligations that may be applicable under the Privacy Act 1988 in Australia, serious damage to Creative Protocol’s reputation can occur if a data breach impacting users’ Personally Identifiable Information (PII) happens, or if Creative Protocol’s response to any such breach is not considered appropriate by the users. All reasonable measures will be taken to ensure the security of the environment and data held within the system.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Communication between the Frothy Chop app and the backend hosted in AWS will be secured with Transport Layer Security (TLS), which provides assurance to the client app that the server it’s connecting to is who it says it is, as well as encrypting the traffic between the app and the server to ensure information cannot be seen by unauthorised parties or manipulated. The use of public Wi-Fi by end users, such as is present in a lot of hospitality venues, introduces risks to data security and integrity of communications from interception and rogue access points. Creative Protocol will make use of certificate pinning within the app, a practice that ensures the server’s certificate is the one expected, to ensure that interception, or man-in-the-middle, attacks are prevented.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">The app’s supporting infrastructure hosted within AWS by necessity will be Internet-facing and susceptible to data breach attempts. The use of cloud native constructs for the traditional security roles of Web Application Firewall (WAF) and Intrusion Prevention System (IPS), such as Amazon API Gateway, AWS Network Firewall, AWS WAF and Amazon GuardDuty, will provide a layer of security in front of the front-end supporting servers while being able to scale with traffic load resulting from the increasing number of users.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Penetration testing, also known as ethical hacking, can provide significant benefits to businesses in assessing their Information Technology environments and the computer software they run (Goel &amp; Mehtre, 2015). Although it is practically impossible to have 100% vulnerability free systems, penetration testing can identify known issues with environment configuration and running software, providing businesses an opportunity to remove as many vulnerabilities as possible prior to a system going live and becoming Internet accessible (Goel &amp; Mehtre, 2015). Vulnerability Assessment and Penetration Testing has a total 9 step process, being Scope, Reconnaissance, Vulnerability Detection, Information Analysis and Planning, Penetration Testing, Privilege Escalation, Result Analysis, Reporting and Clean Up. There are several forms of testing which can include manual testing, automated testing and fuzz testing. Penetration testing tools that Creative Protocol could possibly use are Metasploit, Nessus or Burp Suite, although it is recommended to engage a third-party specialist to perform the testing to provide a “fresh eyes” audit of the environment.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">Whilst Cyber Security within Information Technology can be an overwhelming topic, Creative Protocol aims to use tools that are user friendly and low impact, but also functional and effective at protecting our data and computer systems. Creative Protocol is committed to ensuring that our data and that of our end users remains safe and away from unauthorised eyes.&nbsp;</span>
           </p>
           <p style="text-align: center;">
             <span class="u-text-custom-color-2" style="font-size: 1.875rem;">Roles</span>
@@ -495,61 +608,51 @@
             </span>
           </p>
           <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">To develop a fully scoped and working application Creative Protocol has established that a timeframe spanning past the next four to ten weeks will be expected. It is estimated (to the best of their knowledge) that a projected timeframe for the extended period of 10 more allocated weeks of project development for initial phase is relevant and necessary.&nbsp;</span>
+            <span style="font-size: 1.5rem;">Creative Protocol has estimated with the best of their knowledge a projected timeframe for the extended period of 10 more allocated weeks of project development. The team at Creative Protocol plan to implement a strategy centred around design thinking (DT) in which we will utilise for the further 10 weeks of allocated project time. DT has been recognised as a methodology that promotes the design of engaging and user-friendly apps (Shahrasbi, Jin and Zheng 2021). With a further 10 weeks of project development, we believe that by implementing such a strategy, the team would present the best opportunity for the project’s success. According to the UK Design Council (UK Design Council 2010), DT is a method which understands problems and offers innovative solutions.&nbsp;</span>
           </p>
           <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">Below is a flow chart outlining the process of tasks involved. We feel this is the process of how we would develop our project into a fully functioning app. Although we have outlined our process, we do not feel that in the 10 weeks allocated timeframe that we would be able to see the project through to completion of a working testable prototype.&nbsp;</span>
+            <span style="font-size: 1.5rem;">DT has 5 main phases: empathize, define, ideate, prototype, and test.&nbsp;</span>
           </p>
           <p style="text-align: center;">
             <span style="font-size: 1.5rem;">
-              <img src="images/Timeframe.png" width="462" style="width: 462px;" class="fr-dib fr-fic">
+              <img src="images/edipt.png" width="570" style="width: 1067px;" class="fr-dib fr-fic">
             </span>
           </p>
-          <p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Empathize</span>
+            </span>
+            <span style="font-size: 1.5rem;"> – The first phase for the team is the empathize phase. This phase will allow the team to commence consumer surveying across multiple brewery locations to gain an insight into our users needs, behaviours, attitudes and experiences within a brewery setting. We feel that surveying can be approached in multiple forms such as, face to face interviewing which involves groundwork between brewery locations, we also believe that surveying can be completed through a more quantitative approach by gathering user data through traditional pen and paper surveying. The latter approach may be executed through solid communication and building relationships with local breweries as to gain permission to have our survey papers displayed within their brewery for patrons to fill out.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Define</span>
+            </span>
+            <span style="font-size: 1.5rem;"> – After conducting our user research we aim to define who our targeted audience is and what their needs are. This stage involves the commitment of analysing numerous amounts of data to understand the mean of our statistics received and to understand our users desires on a deeper level.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Ideate</span>
+            </span>
+            <span style="font-size: 1.5rem;"> – With the collection of data received and a thorough analysis, Creative Protocol will initialise the ideate phase of the DT strategy. The phase will highlight the importance of teamwork as we together build our understanding of user needs and begin to implement feature ideas for the app.&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Prototype</span>
+            </span>
+            <span style="font-size: 1.5rem;"> – In the prototype phase the team will begin to build out a low fidelity prototype. Creative Protocol will design the app on paper through hand sketches and Microsoft PowerPoint. This lowfidelity prototype will be used amongst the group to test the useability and to gain feedback on its performance within the team before testing is taken further. After developing a low-fidelity prototype, the team will commence the building of a high-fidelity prototype. The team plan to use such applications as Figma (Figma 2022).&nbsp;</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">
+              <span class="u-text-custom-color-2">Test</span>
+            </span>
+            <span style="font-size: 1.5rem;"> – Now the team has developed a low-fidelity prototype, and a high-fidelity prototype, the team can then take these developments into the testing phase. The testing phase involves numerous user testing within the team group, our targeted users, and any other outside parties which could provide professional and technical feedback such as fellow students, university tutors and lecturers and industry professionals.</span>
+          </p>
+          <p style="text-align: center;">
+            <span style="font-size: 1.5rem;">We have created a projected timeframe for our project should we be able to bring our project through to development and completion.</span>
+          </p>
+          <p style="text-align: center;">
             <br>
-          </p>
-          <p>
-            <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Consumer Surveying</span>
-            </span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">We aim to spend 4 weeks on getting to know how consumers. We would approach this task by visiting a range of breweries and having customers complete a survey. This will develop key insights into our customers, and we could attain data on their exact needs and opinions. By gaining this information from our customers we can better develop an app suited to their needs and wants.&nbsp;</span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Consumer Marketing</span>
-            </span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">As we are acquiring data from our survey, we can begin to market our product. Our aim is to target our direct customers with the knowledge acquired from our consumer surveying. Social platforms such as Facebook, Instagram and our own webpage will be the main resources in providing our marketing strategy towards consumers. By utilising the technology that social media platforms provide, and the knowledge gained from surveying, we can directly target our audience.&nbsp;</span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Legislation Review</span>
-            </span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">An important part of developing a project is to understand the legal ramifications which could arise. By understanding consumer law and consumer privacy, we can best minimise our risk of an arising breach of law. We will develop a key understanding of the Australian Consumer Law Act 1992 and the Australian Privacy Act 1988.&nbsp;</span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Capital Funding</span>
-            </span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">As we build our foundations, we will begin to seek capital funding for our app development. We will have in place our complete consumer and marketing strategies/results, and a detailed understanding of the surrounding laws. We aim to seek venture capitalist targeting start up technology businesses with the aim of investing 100k to 3 million. Our research suggests a firm such as Right Click Capital would be an ideal VC to target. We would seek other VC’s with the same or similar strategy/approach to capital investment.&nbsp;</span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">App Development</span>
-            </span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">The app development is the final stage of our process. This would only be possible after the other 4 tasks have been fulfilled. By completing surveying, marketing, legislation review, and capital funding, we will heavily reduce our risk in beginning the process of developing the app. This is because we will have gained sufficient knowledge of our customer’s needs, understood legal ramifications, and attained funding for the app development. This allows us a very clear understanding of the technologies and key elements necessary in the app development.&nbsp;</span>
-          </p>
-          <p style="text-align: center;">
-            <span style="font-size: 1.5rem;">We have created a projected timeframe for our project should we be able to bring our project through to development and completion.&nbsp;</span>
           </p>
           <p style="text-align: center;">
             <span style="font-size: 1.5rem;">
@@ -616,9 +719,9 @@
           </p>
           <p style="text-align: center;">
             <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Employment:</span>&nbsp;Full Time <br>
-              <span class="u-text-custom-color-2">Salary:</span>&nbsp;90K plus bonus <br>
-              <span class="u-text-custom-color-2">Closing date:</span>&nbsp;20th February 2022, 11.59pm
+              <span class="u-text-custom-color-2">Employment:</span> Full Time <br>
+              <span class="u-text-custom-color-2">Salary:</span> 90K plus bonus <br>
+              <span class="u-text-custom-color-2">Closing date:</span> 20th February 2022, 11.59pm
             </span>
           </p>
           <p style="text-align: center;">
@@ -694,9 +797,9 @@
           </p>
           <p style="text-align: center;">
             <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Employment:</span>&nbsp;Full Time <br>
-              <span class="u-text-custom-color-2">Salary:</span>&nbsp;100k plus super <br>
-              <span class="u-text-custom-color-2">Closing date:</span>&nbsp;20th February 2022, 11.59pm <br>
+              <span class="u-text-custom-color-2">Employment:</span> Full Time <br>
+              <span class="u-text-custom-color-2">Salary:</span> 100k plus super <br>
+              <span class="u-text-custom-color-2">Closing date:</span> 20th February 2022, 11.59pm <br>
               <br>Creative Protocol is the newest, brightest privately owned Information Technology provider. Our clients trust us to create and invigorate their creative thoughts and processes into fruition and create magic with the use of technology within our design scope.<br>&nbsp;We believe we are the #1 best employer to work for in Australia in 2021. <br>You will help make all this happen with our talented, dedicated, and unique creator extraordinaries all the while keeping technology human. <br>About this role: Join our exciting creative revolution! Our market is fast paced but with a hint of chill factor. Our reputation is unprecedented representing an exciting new opportunity for the right talent. What we are looking for: <br>• Cloud- system build automation<br>&nbsp;• Experience in either windows or Linux operating system <br>• Implementing system security protocols within operational platforms and mitigating cyber threat. What you’ll love: <br>• Our strong team environment<br>&nbsp;• 5 weeks annual leave <br>• Training and development ongoing<br>&nbsp;&nbsp;
             </span>
             <br>
@@ -725,23 +828,23 @@
             <br>
             <span style="font-size: 1.5rem;">&nbsp;This is the job for you! Come and join Creative Protocol.</span>
             <br>
-            <span style="font-size: 1.5rem;">&nbsp;<span class="u-text-custom-color-2">Job Status:</span>&nbsp;Full Time 6+ months&nbsp;
+            <span style="font-size: 1.5rem;">&nbsp;<span class="u-text-custom-color-2">Job Status:</span> Full Time 6+ months&nbsp;
             </span>
             <br>
             <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Salary:</span>&nbsp;80K +(negotiable)&nbsp;
+              <span class="u-text-custom-color-2">Salary:</span> 80K +(negotiable)&nbsp;
             </span>
             <br>
             <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Position No:</span>&nbsp;CreativePro#1&nbsp;
+              <span class="u-text-custom-color-2">Position No:</span> CreativePro#1&nbsp;
             </span>
             <br>
             <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Applications Close:</span>&nbsp;Sunday, 20th February 2022, 11.59pm&nbsp;
+              <span class="u-text-custom-color-2">Applications Close:</span> Sunday, 20th February 2022, 11.59pm&nbsp;
             </span>
             <br>
             <span style="font-size: 1.5rem;">
-              <span class="u-text-custom-color-2">Technical Enquiries:</span>&nbsp;1300 Creative&nbsp;
+              <span class="u-text-custom-color-2">Technical Enquiries:</span> 1300 Creative&nbsp;
             </span>
             <br>
             <br>
